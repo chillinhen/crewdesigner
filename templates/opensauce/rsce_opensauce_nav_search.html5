@@ -1,0 +1,7 @@
+
+<!-- indexer::stop -->
+<form action="<?php if ($this->search): ?>{{link_url::<?php echo $this->search ?>}}<?php endif ?>" method="get" class="<?php echo $this->class ?>"<?php echo $this->cssID ?>>
+	<input type="search" name="keywords" placeholder="<?php echo $this->placeholder ?>" />
+	<button type="submit"><?php echo $this->label ?></button>
+</form>
+<!-- indexer::continue -->

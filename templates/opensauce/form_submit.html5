@@ -1,0 +1,5 @@
+<?php $this->extend('form_submit') ?>
+
+<?php $this->block('field') ?>
+	<button type="submit" id="ctrl_<?php echo $this->id ?>" class="submit<?php if ($this->class) echo ' ' . $this->class ?>"<?php echo $this->getAttributes() ?>><?php echo specialchars($this->slabel) ?></button>
+<?php $this->endblock() ?>

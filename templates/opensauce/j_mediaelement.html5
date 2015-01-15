@@ -1,0 +1,10 @@
+<?php
+
+ob_start();
+include \TemplateLoader::getDefaultPath($this->strTemplate, $this->strFormat);
+$parent = ob_get_clean();
+
+$replace = array(
+  '.mediaelementplayer({' => '.mediaelementplayer({videoWidth:\'100%\',videoHeight:\'100%\',',
+);
+echo str_replace(array_keys($replace), array_values($replace), $parent);

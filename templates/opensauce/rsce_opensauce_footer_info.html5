@@ -1,0 +1,11 @@
+
+<!-- indexer::stop -->
+<div class="<?php echo $this->class ?>"<?php echo $this->cssID ?>>
+	<p>
+		<?php echo $this->text ?>
+		<?php if (!$this->license): ?>
+			<a href="http://rocksolidthemes.com/de/contao-themes" class="rocksolid-copyright">RockSolid Contao Themes &amp; Templates</a>
+		<?php endif ?>
+	</p>
+</div>
+<!-- indexer::continue -->

@@ -1,0 +1,246 @@
+@media only screen and (max-width:320px) {
+    .caroufredsel_wrapper {
+	height: 200px;
+	position: relative;
+	display:block;
+    }
+    .caroufredsel {
+	width: 320px !important;
+	display:block;
+    }
+    .caroufredsel > div, .caroufredsel > section, .caroufredsel_thumbnails > div {
+	float: none !important;
+	width: 100% !important;
+	text-align: center;
+    }
+    #kontakt label {
+	display: none;
+    }
+    #kontakt input:not(.radio), #kontakt textarea{
+	width: 100%;
+    }
+}
+@media only screen and (min-width: 320px) {
+
+
+    
+    [class*="team"] .mod_box_items .image_container img{
+	width: 100px;
+	height: 100px;
+    }
+    #fullwidth {
+	margin: 0 1em;
+    }
+    .msry_theme_standard.ce_masonry_gallery{
+	padding-left: 5px;
+    }
+
+    #content {
+	margin-bottom: 2em;
+    }
+    body > #footer#footer {
+	height:auto !important;
+    }
+    .footer-logo img{
+	margin:0px auto;
+    }
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .navbar-brand{
+	min-width: 250px;
+    }
+    .navbar-brand > span {
+	font-size: 18px;
+    }
+ 
+    .startseite .ce_hyperlink.teaser-link{
+	position: relative;
+	bottom: 0;
+    }
+    .caroufredsel_gallery img {
+	height: auto;
+	width: 300px;
+    }
+    .radio_container label, .captcha_text {
+	display: inline-block !important;
+	font-size: smaller;
+	margin-left: 0;
+	font-weight: normal;
+    }
+    body > #footer#footer > .container > div {
+	padding:1em 5%;
+	text-align: center;
+	width: 90%;
+    }
+    body > #footer#footer .mod_customnav{
+	margin:0 auto;
+	width:175px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+        .mod_article .ce_text:not(.mod_box_items) .image_container.float_left,
+    .mod_article .ce_text .image_container.float_right {
+	float: none;
+	margin:0px auto;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width:768px) {
+    .navbar-brand{
+	width: 400px;
+    }
+    .navbar-brand > span {
+	font-size: 24px;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 768px) {
+	body > header > .row > .mod_article > .ce_image .image_container{
+		width: 100%;
+		height:auto;
+	}
+	
+	body > header > .row > .mod_article > .ce_image .image_container:after{
+	background-size:auto 150px;
+	top: -30px;
+	}
+
+
+    #team  [class*="team"] .mod_box_items{
+	background: none repeat scroll 0 0 #eee;
+	border-radius: 200px !important;
+	margin: 2em 0;
+	min-height: 250px;
+	padding: 2em 3em;
+	position: relative;
+    }
+    #team  [class*="team"] p:last-child {
+	position: absolute;
+	top:0;
+	right: 0;
+	margin-left: 300px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    #team [class*="team"] p:last-child{
+	display: none;
+    }
+    #team  [class*="team"] .mod_box_items{
+	background:transparent;
+	padding:0;
+	margin:1em 0;
+	min-height: 120px;
+    }
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    body > #footer .container > div{
+	padding: 0 ;
+    }
+    .navbar-header {
+	display: none;
+    }
+    .navbar-collapse.collapse{
+	font-size: 1.1em;
+	display: none;
+    }
+    .navbar-collapse.collapse:before{
+    display: none;
+	content:'';
+	position: absolute;
+	left:0;
+	width:100%;
+	height: 100px;
+	margin: 20px 0;
+	background: transparent url('../img/logo-banner.png') no-repeat center center;
+	background-size: contain;
+	display: block;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+
+}
+@media only screen and (min-width:1024px) {
+    .navbar-collapse.collapse:before{
+	display: none;
+    }
+  
+
+    .container {
+	min-width: 1000px;
+    }
+    body > section#main {
+	padding: 4em 0;
+    }
+    #content {
+	border-right:1px solid #ccc;
+	padding-right: 2em;
+    }
+    #right {
+	border-left: 1px solid #ccc;
+	margin-left: -1px;
+	padding-left: 2em;
+    }
+    #content .mod_article {
+	padding:.5em;
+    }
+    body.jobs #content .mod_article:nth-child(even) {
+	background: #eee;
+    }
+    [class*="team"] .mod_box_items .image_container img{
+	width: 125px;
+	height: 125px;
+    }
+    .startseite .ce_hyperlink.teaser-link{
+        display: block;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        bottom: -50px;
+        left: 0;
+        z-index: 999;
+    }
+    .masonry_gallery {
+	width: 25%;
+    }
+
+    .caroufredsel_gallery img {
+	height: 50px;
+	width: auto;
+	max-width: none;
+	margin: 25px 15px;
+    }
+    #team  [class*="team"] .mod_box_items{
+	min-height: 200px;
+    }
+    #team  [class*="team"] p:last-child {
+	margin-left: 350px;
+    }
+
+
+
+
+}
+@media only screen and (min-width: 1200px) {
+    body > header > .row > .mod_article > .ce_image .image_container:after{
+	background-size:auto 180px;
+	top:0;
+    }
+    
+}

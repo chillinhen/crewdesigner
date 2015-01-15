@@ -1,0 +1,14 @@
+<section class="icon-links <?php echo $this->class ?>"<?php echo $this->cssID ?>>
+	<?php if ($this->headline): ?>
+		<<?php echo $this->hl ?>><?php echo $this->headline ?></<?php echo $this->hl ?>>
+	<?php endif ?>
+	<ul>
+		<?php foreach ($this->links as $link): ?>
+		<li>
+			<a href="<?php echo $link->url ?>"<?php if ($link->icon): ?> data-icon="&#x<?php echo $link->icon ?>;"<?php endif ?><?php if ($link->color): ?> style="color: #<?php echo $link->color ?>"<?php endif ?><?php if ($link->newWindow): ?> target="_blank"<?php endif ?>>
+				<span class="icon-links-label"><?php echo $link->label ?></span>
+			</a>
+		</li>
+		<?php endforeach ?>
+	</ul>
+</section>

@@ -1,0 +1,40 @@
+<article class="news-image-teaser<?php if (!$this->date): ?> -no-date<?php endif ?>">
+
+	<header>
+
+		<h1>
+			<a href="<?php echo $this->link ?>" title="<?php echo $this->alt ?>">
+				<?php echo $this->newsHeadline ?>
+			</a>
+		</h1>
+
+		<?php if ($this->date): ?>
+			<time datetime="<?php echo $this->datetime ?>">
+				<?php echo $this->parseDate('d', $this->time) ?>
+				<b><?php echo $this->parseDate('M', $this->time) ?></b>
+				<i><?php echo $this->parseDate('Y', $this->time) ?></i>
+			</time>
+		<?php endif ?>
+
+		<?php if ($this->hasMetaFields && ($this->author || $this->commentCount)): ?>
+			<p class="news-image-teaser-info">
+				<?php if ($this->author): ?>
+					<?php echo mb_strtoupper(mb_substr($this->author, 0, 1, 'UTF-8'), 'UTF-8') . mb_substr($this->author, 1, mb_strlen($this->author, 'UTF-8'), 'UTF-8') ?><?php if ($this->commentCount): ?>, <?php endif ?>
+				<?php endif ?>
+				<?php echo $this->commentCount ?>
+			</p>
+		<?php endif ?>
+
+	</header>
+
+	<?php if($this->addImage): ?>
+		<?php $this->insert('picture_default', $this->picture) ?>
+	<?php endif ?>
+
+	<?php echo $this->teaser ?>
+
+	<?php if ($this->more): ?>
+		<p class="news-image-teaser-more"><?php echo $this->more ?></p>
+	<?php endif ?>
+
+</article>

@@ -1,0 +1,28 @@
+[08-Dec-2014 20:39:00 Europe/Berlin] PHP Fatal error: Uncaught exception 'Exception' with message 'Could not find template "nav_mobile"' thrown in /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/TemplateLoader.php on line 127
+#0 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Controller.php(79): Contao\TemplateLoader::getPath('nav_mobile', 'html5')
+#1 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/BaseTemplate.php(85): Contao\Controller::getTemplate('nav_mobile', 'html5')
+#2 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Template.php(242): Contao\BaseTemplate->parse()
+#3 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/classes/FrontendTemplate.php(46): Contao\Template->parse()
+#4 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/modules/Module.php(380): Contao\FrontendTemplate->parse()
+#5 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/modules/ModuleNavigation.php(105): Contao\Module->renderNavigation('1', 1, NULL, NULL)
+#6 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/modules/Module.php(163): Contao\ModuleNavigation->compile()
+#7 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/modules/ModuleNavigation.php(57): Contao\Module->generate()
+#8 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Controller.php(314): Contao\ModuleNavigation->generate()
+#9 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/pages/PageRegular.php(138): Contao\Controller::getFrontendModule(Object(Contao\ModuleModel), 'header')
+#10 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/FrontendIndex.php(253): Contao\PageRegular->generate(Object(Contao\PageModel), true)
+#11 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/index.php(22): Contao\FrontendIndex->run()
+#12 {main}
+[08-Dec-2014 20:39:54 Europe/Berlin] PHP Fatal error: Uncaught exception 'Exception' with message 'Could not find template "nav_mobile"' thrown in /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/TemplateLoader.php on line 127
+#0 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Controller.php(79): Contao\TemplateLoader::getPath('nav_mobile', 'html5')
+#1 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/BaseTemplate.php(85): Contao\Controller::getTemplate('nav_mobile', 'html5')
+#2 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Template.php(242): Contao\BaseTemplate->parse()
+#3 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/classes/FrontendTemplate.php(46): Contao\Template->parse()
+#4 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/modules/Module.php(380): Contao\FrontendTemplate->parse()
+#5 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/modules/ModuleNavigation.php(105): Contao\Module->renderNavigation('1', 1, NULL, NULL)
+#6 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/modules/Module.php(163): Contao\ModuleNavigation->compile()
+#7 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/modules/ModuleNavigation.php(57): Contao\Module->generate()
+#8 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Controller.php(314): Contao\ModuleNavigation->generate()
+#9 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/pages/PageRegular.php(138): Contao\Controller::getFrontendModule(Object(Contao\ModuleModel), 'header')
+#10 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/FrontendIndex.php(253): Contao\PageRegular->generate(Object(Contao\PageModel), true)
+#11 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/index.php(22): Contao\FrontendIndex->run()
+#12 {main}

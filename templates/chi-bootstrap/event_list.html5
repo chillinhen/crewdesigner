@@ -1,0 +1,12 @@
+<div class="layout_simple arc_<?php echo $this->archive->id; ?> block clearfix <?php echo $this->class; ?>">
+    <?php if ($this->header): ?>
+
+
+        <div class="header<?php echo $this->classHeader; ?>">
+    	<time datetime="<?php echo $this->datetime; ?>" class="date"><?php echo $this->firstDate; ?></time>
+        </div>
+
+    <?php endif; ?>
+	  <a class="event layout_list<?php echo $this->classList; ?>" href="<?php echo $this->href; ?>" title="<?php echo $this->title; ?> (<?php if ($this->day): echo $this->day; ?>, <?php endif; echo $this->date; if ($this->time): ?>, <?php echo $this->time; endif; ?>)"<?php echo $this->target; ?>><?php echo $this->link; ?></a>
+
+</div>

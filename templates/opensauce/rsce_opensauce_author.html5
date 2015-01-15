@@ -1,0 +1,20 @@
+<section class="author-box <?php echo $this->class ?>"<?php echo $this->cssID ?>>
+	<?php if ($this->headline): ?>
+		<<?php echo $this->hl ?>><?php echo $this->headline ?></<?php echo $this->hl ?>>
+	<?php endif ?>
+	<?php if ($image = $this->getImageObject($this->image, $this->size)): ?>
+		<?php $this->insert('picture_default', $image->picture) ?>
+	<?php endif ?>
+	<?php echo $this->text ?>
+	<?php if (count($this->links)): ?>
+		<ul class="author-box-links">
+			<?php foreach ($this->links as $link): ?>
+				<li>
+					<a href="<?php echo $link->url ?>"<?php if ($link->color): ?> style="color: #<?php echo $link->color ?>"<?php endif ?><?php if ($link->newWindow): ?> target="_blank"<?php endif ?>>
+						<?php echo $link->label ?>
+					</a>
+				</li>
+			<?php endforeach ?>
+		</ul>
+	<?php endif ?>
+</section>

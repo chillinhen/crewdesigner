@@ -1,0 +1,58 @@
+.container {
+	//width: @gridRowWidth;
+	margin: 0 auto;
+}
+
+.containerFluid(@columns: 12) {
+	.clearfix;
+	
+	margin-left: auto;
+	margin-right: auto;
+	max-width: (@gridColumnWidth * @columns) + (@gridGutterWidth * (@columns - 1));
+	
+}
+
+.two-column-right(@main,@right) {
+	
+	#main {
+		.makeColumn(@main);
+		
+		margin-left: 0;
+	}
+	
+	#right {
+		.makeColumn(@right);
+	}
+}
+
+.makeHoly(@columns: 1, @offset: 0) {
+	margin-left: ((@fluidGridColumnWidth * @columns) + (@fluidGridGutterWidth * (@columns))) * -1;
+}
+
+.makeFluidColumn(@span:1,@offset:0){
+	
+    #grid > .fluid .span(@span);
+    #grid > .fluid .offset(@offset);
+    
+    float: left;
+    
+    &:first-child {
+        #grid > .fluid .offsetFirstChild(@offset);
+    }
+}
+//
+// Mixin für font awesome 4.X
+//
+.fa-icon(@icon) {
+	&:before {
+		display: inline-block;
+		font-family: FontAwesome;
+		font-style: normal;
+		font-weight: normal;
+		line-height: 1;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		padding-right: 0.25em;
+		content: @icon;
+	}
+}

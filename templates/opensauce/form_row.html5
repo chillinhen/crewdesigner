@@ -1,0 +1,2 @@
+<?php $this->extend('form_row') ?>
+<?php $this->strClass .= ' form-row' ?>

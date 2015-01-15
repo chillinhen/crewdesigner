@@ -1,0 +1,9 @@
+<?php if($this->level === 'level_1'): ?><select id="main-navigation-mobile" class="main-navigation-mobile tl_chosen chzn-done">
+<?php endif; ?>
+	<?php foreach ($this->items as $item): ?>
+		<option value="<?php echo $item['href']; ?>"<?php if ($item['isActive']): ?> selected="selected"<?php endif; ?>>
+			<?php echo str_repeat('–', substr($this->level, 6)-1); ?> <?php echo $item['link']; ?>
+		</option>
+		<?php echo $item['subitems']; ?>
+	<?php endforeach; ?>
+<?php if($this->level === 'level_1'): ?></select><?php endif; ?>

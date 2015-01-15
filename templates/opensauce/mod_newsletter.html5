@@ -1,0 +1,16 @@
+<?php $this->extend('mod_newsletter') ?>
+
+<?php $this->block('content') ?>
+
+	<?php if ($this->headline): ?>
+		<?php $headline = explode('|', $this->headline, 2) ?>
+		<<?php echo $this->hl ?>><?php echo $headline[0] ?></<?php echo $this->hl ?>>
+		<?php if (!empty($headline[1])): ?>
+			<h2><?php echo $headline[1] ?></h2>
+		<?php endif ?>
+		<?php $this->headline = null ?>
+	<?php endif ?>
+
+	<?php $this->parent() ?>
+
+<?php $this->endblock('content') ?>

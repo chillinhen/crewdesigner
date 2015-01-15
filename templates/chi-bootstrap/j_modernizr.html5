@@ -1,0 +1,4 @@
+<?php
+	// Add Modernizr to <head>
+	$GLOBALS['TL_JAVASCRIPT'][] = $GLOBALS['TL_CONFIG']['uploadPath'] . '/opensauce/js/modernizr-2.6.2.min.js|static';
+?>

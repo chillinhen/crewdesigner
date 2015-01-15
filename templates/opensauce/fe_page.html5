@@ -1,0 +1,52 @@
+<?php $this->extend('fe_page') ?>
+
+<?php $this->block('body') ?>
+
+	<!--[if lt IE 8]>
+		<p>You are using an outdated browser. <a href="http://whatbrowser.org/">Upgrade your browser today</a>.</p>
+	<![endif]-->
+
+	<?php echo $this->sections('top') ?>
+
+	<div class="page">
+
+		<?php if ($this->header): ?>
+			<header class="page-header">
+				<?php echo $this->header ?>
+			</header>
+		<?php endif ?>
+
+		<?php echo $this->sections('before') ?>
+
+		<div class="content-wrapper">
+
+			<section role="main" class="main-content">
+
+				<?php echo $this->main ?>
+
+				<?php echo $this->sections('main') ?>
+
+			</section>
+
+			<?php if($this->left || $this->right): ?>
+				<aside class="sidebar">
+					<?php echo $this->left ?>
+					<?php echo $this->right ?>
+				</aside>
+			<?php endif ?>
+
+		</div>
+
+		<?php echo $this->sections('after') ?>
+
+		<?php if ($this->footer): ?>
+			<footer class="page-footer">
+				<?php echo $this->footer ?>
+			</footer>
+		<?php endif ?>
+
+	</div>
+
+	<?php echo $this->sections('bottom') ?>
+
+<?php $this->endblock('body') ?>
