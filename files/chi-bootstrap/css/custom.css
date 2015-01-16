@@ -236,10 +236,7 @@ background-image: url('../img/button-cd.png');
 	min-width: 200px;
 	max-width: 240px;
 }
-.kontakt .submit.submit.btn.btn-primary{
-	float: right !important;
-	margin-right: 2em;
-}
+
 /* =============================================================================
    Formular
    ========================================================================== */
@@ -301,10 +298,7 @@ form .widget {
     float: left;
     width: 80%;
 }
-.captcha_text{
-    margin-left: 120px;
-    line-height: 2;
-}
+
 /* =============================================================================
    Navigation
    ========================================================================== */
@@ -482,7 +476,7 @@ aside .image_container.float_right {
     margin:0 0 2em 2em;
 }
 
-[class*="team"] .mod_box_items .image_container img{
+[class*="team"] .image_container img{
     -webkit-border-radius: 50%;
     border-radius: 50% !important;
     -webkit-box-shadow:inset 1px 1px 3px 2px rgba(0,0,0,.2);
@@ -666,8 +660,4 @@ aside .image_container.float_right {
 }
 .caroufredsel_controls a.selected{
     background: rgba(121, 203, 214, 1);
-}
-.caroufredsel_skin .image_container img, 
-.caroufredsel_thumbnails_skin .image_container img{
-    margin: 0 1em;
 }
