@@ -5,9 +5,12 @@ jQuery(document).ready(function($) {
 	$('ul.level_1, #kontakt form .widget, .team-short').addClass('clearfix');
 	$('aside .mod_article > .ce_teaser').addClass('clearfix');
 	
-	$('.mod_navigation > ul.level_1').wrap('<div class="container"></div>').addClass('nav nav-tabs nav-justified');
+	$('.mod_navigation > ul.level_1').addClass('nav nav-tabs nav-justified');
+	$('#header .mod_navigation > ul.level_1').wrap('<div class="container"></div>');
 	$('.mod_navigation').addClass('collapse').addClass('navbar-collapse');
 	$('.mod_navigation ul.level_1 > li.startseite > *').wrapInner('<span></span>');
+	
+	$('aside .mod_navigation').removeClass('navbar-collapse').removeClass('collapse');
 	//content box
 	$('.startseite .mod_contentbox').addClass('row');
 	//box Items
@@ -19,9 +22,9 @@ jQuery(document).ready(function($) {
 	$('.image_container img').addClass('img-responsive');
 	$('#content .mod_article .ce_text p:first-child').addClass('lead');
 	
+	// responsive tables 
+	$('.team table').wrap('<div class="responsive-table"></div>');
 	//form styles 
-
-	
 	$('input[type="submit"]').addClass('btn btn-primary');
 
 	//social
@@ -37,6 +40,7 @@ jQuery(document).ready(function($) {
 	$('.ce_text ul > li').each(function(){
 		$(this).wrapInner('<span></span>');
 	});
+	
 	
 	//define same height in panels
 	var max_height = 0;
