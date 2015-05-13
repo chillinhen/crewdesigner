@@ -1,0 +1,368 @@
+[18-Dec-2014 10:41:46 Europe/Berlin] PHP Fatal error: Uncaught exception 'Exception' with message 'Could not find template "j_modernizr"' thrown in /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/TemplateLoader.php on line 127
+#0 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Controller.php(75): Contao\TemplateLoader::getPath('j_modernizr', 'html5', 'templates/chi-b...')
+#1 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/BaseTemplate.php(85): Contao\Controller::getTemplate('j_modernizr', 'html5')
+#2 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Template.php(242): Contao\BaseTemplate->parse()
+#3 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/classes/FrontendTemplate.php(46): Contao\Template->parse()
+#4 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/pages/PageRegular.php(710): Contao\FrontendTemplate->parse()
+#5 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/pages/PageRegular.php(191): Contao\PageRegular->createFooterScripts(Object(Contao\LayoutModel))
+#6 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/FrontendIndex.php(253): Contao\PageRegular->generate(Object(Contao\PageModel), true)
+#7 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/index.php(22): Contao\FrontendIndex->run()
+#8 {main}
+[18-Dec-2014 10:43:56 Europe/Berlin] PHP Fatal error: Uncaught exception 'Exception' with message 'Could not find template "j_modernizr"' thrown in /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/TemplateLoader.php on line 127
+#0 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Controller.php(75): Contao\TemplateLoader::getPath('j_modernizr', 'html5', 'templates/chi-b...')
+#1 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/BaseTemplate.php(85): Contao\Controller::getTemplate('j_modernizr', 'html5')
+#2 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Template.php(242): Contao\BaseTemplate->parse()
+#3 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/classes/FrontendTemplate.php(46): Contao\Template->parse()
+#4 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/pages/PageRegular.php(710): Contao\FrontendTemplate->parse()
+#5 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/pages/PageRegular.php(191): Contao\PageRegular->createFooterScripts(Object(Contao\LayoutModel))
+#6 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/FrontendIndex.php(253): Contao\PageRegular->generate(Object(Contao\PageModel), true)
+#7 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/index.php(22): Contao\FrontendIndex->run()
+#8 {main}
+[18-Dec-2014 14:50:55 Europe/Berlin] 
+PHP Warning: scandir(/Users/chilliscope/Documents/webseiten/contao/crewdesigner/files/fotos/): failed to open dir: No such file or directory in /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/helper/functions.php on line 194
+#0 [internal function]: __error(2, 'scandir(/Users/...', '/Users/chillisc...', 194, Array)
+#1 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/helper/functions.php(194): scandir('/Users/chillisc...')
+#2 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/drivers/DC_Folder.php(2247): scan('/Users/chillisc...')
+#3 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/drivers/DC_Folder.php(312): Contao\DC_Folder->generateTree('/Users/chillisc...', 0, false, false, false)
+#4 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/classes/Backend.php(631): Contao\DC_Folder->showAll()
+#5 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(135): Contao\Backend->getBackendModule('files')
+#6 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/contao/main.php(22): Contao\BackendMain->run()
+#7 {main}
+
+[18-Dec-2014 14:50:55 Europe/Berlin] 
+PHP Warning: scandir(): (errno 2): No such file or directory in /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/helper/functions.php on line 194
+#0 [internal function]: __error(2, 'scandir(): (err...', '/Users/chillisc...', 194, Array)
+#1 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/helper/functions.php(194): scandir('/Users/chillisc...')
+#2 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/drivers/DC_Folder.php(2247): scan('/Users/chillisc...')
+#3 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/drivers/DC_Folder.php(312): Contao\DC_Folder->generateTree('/Users/chillisc...', 0, false, false, false)
+#4 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/classes/Backend.php(631): Contao\DC_Folder->showAll()
+#5 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(135): Contao\Backend->getBackendModule('files')
+#6 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/contao/main.php(22): Contao\BackendMain->run()
+#7 {main}
+
+[18-Dec-2014 14:50:55 Europe/Berlin] 
+PHP Warning: Invalid argument supplied for foreach() in /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/helper/functions.php on line 194
+#0 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/helper/functions.php(194): __error(2, 'Invalid argumen...', '/Users/chillisc...', 194, Array)
+#1 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/drivers/DC_Folder.php(2247): scan('/Users/chillisc...')
+#2 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/drivers/DC_Folder.php(312): Contao\DC_Folder->generateTree('/Users/chillisc...', 0, false, false, false)
+#3 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/classes/Backend.php(631): Contao\DC_Folder->showAll()
+#4 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(135): Contao\Backend->getBackendModule('files')
+#5 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/contao/main.php(22): Contao\BackendMain->run()
+#6 {main}
+
+[18-Dec-2014 14:50:55 Europe/Berlin] 
+PHP Warning: Cannot modify header information - headers already sent by (output started at /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/helper/functions.php:70) in /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Template.php on line 259
+#0 [internal function]: __error(2, 'Cannot modify h...', '/Users/chillisc...', 259, Array)
+#1 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Template.php(259): header('Vary: User-Agen...', false)
+#2 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/classes/BackendTemplate.php(122): Contao\Template->output()
+#3 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(277): Contao\BackendTemplate->output()
+#4 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(139): Contao\BackendMain->output()
+#5 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/contao/main.php(22): Contao\BackendMain->run()
+#6 {main}
+
+[18-Dec-2014 14:50:55 Europe/Berlin] 
+PHP Warning: Cannot modify header information - headers already sent by (output started at /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/helper/functions.php:70) in /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Template.php on line 260
+#0 [internal function]: __error(2, 'Cannot modify h...', '/Users/chillisc...', 260, Array)
+#1 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Template.php(260): header('Content-Type: t...')
+#2 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/classes/BackendTemplate.php(122): Contao\Template->output()
+#3 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(277): Contao\BackendTemplate->output()
+#4 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(139): Contao\BackendMain->output()
+#5 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/contao/main.php(22): Contao\BackendMain->run()
+#6 {main}
+
+[18-Dec-2014 14:50:55 Europe/Berlin] 
+PHP Warning: scandir(/Users/chilliscope/Documents/webseiten/contao/crewdesigner/files/fotos/): failed to open dir: No such file or directory in /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/helper/functions.php on line 194
+#0 [internal function]: __error(2, 'scandir(/Users/...', '/Users/chillisc...', 194, Array)
+#1 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/helper/functions.php(194): scandir('/Users/chillisc...')
+#2 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/drivers/DC_Folder.php(2247): scan('/Users/chillisc...')
+#3 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/drivers/DC_Folder.php(312): Contao\DC_Folder->generateTree('/Users/chillisc...', 0, false, false, false)
+#4 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/classes/Backend.php(631): Contao\DC_Folder->showAll()
+#5 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(135): Contao\Backend->getBackendModule('files')
+#6 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/contao/main.php(22): Contao\BackendMain->run()
+#7 {main}
+
+[18-Dec-2014 14:50:55 Europe/Berlin] 
+PHP Warning: scandir(): (errno 2): No such file or directory in /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/helper/functions.php on line 194
+#0 [internal function]: __error(2, 'scandir(): (err...', '/Users/chillisc...', 194, Array)
+#1 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/helper/functions.php(194): scandir('/Users/chillisc...')
+#2 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/drivers/DC_Folder.php(2247): scan('/Users/chillisc...')
+#3 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/drivers/DC_Folder.php(312): Contao\DC_Folder->generateTree('/Users/chillisc...', 0, false, false, false)
+#4 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/classes/Backend.php(631): Contao\DC_Folder->showAll()
+#5 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(135): Contao\Backend->getBackendModule('files')
+#6 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/contao/main.php(22): Contao\BackendMain->run()
+#7 {main}
+
+[18-Dec-2014 14:50:55 Europe/Berlin] 
+PHP Warning: Invalid argument supplied for foreach() in /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/helper/functions.php on line 194
+#0 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/helper/functions.php(194): __error(2, 'Invalid argumen...', '/Users/chillisc...', 194, Array)
+#1 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/drivers/DC_Folder.php(2247): scan('/Users/chillisc...')
+#2 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/drivers/DC_Folder.php(312): Contao\DC_Folder->generateTree('/Users/chillisc...', 0, false, false, false)
+#3 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/classes/Backend.php(631): Contao\DC_Folder->showAll()
+#4 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(135): Contao\Backend->getBackendModule('files')
+#5 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/contao/main.php(22): Contao\BackendMain->run()
+#6 {main}
+
+[18-Dec-2014 14:50:55 Europe/Berlin] 
+PHP Warning: Cannot modify header information - headers already sent by (output started at /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/helper/functions.php:70) in /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Template.php on line 259
+#0 [internal function]: __error(2, 'Cannot modify h...', '/Users/chillisc...', 259, Array)
+#1 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Template.php(259): header('Vary: User-Agen...', false)
+#2 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/classes/BackendTemplate.php(122): Contao\Template->output()
+#3 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(277): Contao\BackendTemplate->output()
+#4 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(139): Contao\BackendMain->output()
+#5 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/contao/main.php(22): Contao\BackendMain->run()
+#6 {main}
+
+[18-Dec-2014 14:50:55 Europe/Berlin] 
+PHP Warning: Cannot modify header information - headers already sent by (output started at /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/helper/functions.php:70) in /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Template.php on line 260
+#0 [internal function]: __error(2, 'Cannot modify h...', '/Users/chillisc...', 260, Array)
+#1 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Template.php(260): header('Content-Type: t...')
+#2 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/classes/BackendTemplate.php(122): Contao\Template->output()
+#3 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(277): Contao\BackendTemplate->output()
+#4 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(139): Contao\BackendMain->output()
+#5 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/contao/main.php(22): Contao\BackendMain->run()
+#6 {main}
+
+[18-Dec-2014 14:51:09 Europe/Berlin] 
+PHP Warning: scandir(/Users/chilliscope/Documents/webseiten/contao/crewdesigner/files/fotos/): failed to open dir: No such file or directory in /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/helper/functions.php on line 194
+#0 [internal function]: __error(2, 'scandir(/Users/...', '/Users/chillisc...', 194, Array)
+#1 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/helper/functions.php(194): scandir('/Users/chillisc...')
+#2 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/drivers/DC_Folder.php(2247): scan('/Users/chillisc...')
+#3 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/drivers/DC_Folder.php(312): Contao\DC_Folder->generateTree('/Users/chillisc...', 0, false, false, false)
+#4 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/classes/Backend.php(631): Contao\DC_Folder->showAll()
+#5 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(135): Contao\Backend->getBackendModule('files')
+#6 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/contao/main.php(22): Contao\BackendMain->run()
+#7 {main}
+
+[18-Dec-2014 14:51:09 Europe/Berlin] 
+PHP Warning: scandir(): (errno 2): No such file or directory in /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/helper/functions.php on line 194
+#0 [internal function]: __error(2, 'scandir(): (err...', '/Users/chillisc...', 194, Array)
+#1 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/helper/functions.php(194): scandir('/Users/chillisc...')
+#2 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/drivers/DC_Folder.php(2247): scan('/Users/chillisc...')
+#3 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/drivers/DC_Folder.php(312): Contao\DC_Folder->generateTree('/Users/chillisc...', 0, false, false, false)
+#4 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/classes/Backend.php(631): Contao\DC_Folder->showAll()
+#5 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(135): Contao\Backend->getBackendModule('files')
+#6 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/contao/main.php(22): Contao\BackendMain->run()
+#7 {main}
+
+[18-Dec-2014 14:51:09 Europe/Berlin] 
+PHP Warning: Invalid argument supplied for foreach() in /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/helper/functions.php on line 194
+#0 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/helper/functions.php(194): __error(2, 'Invalid argumen...', '/Users/chillisc...', 194, Array)
+#1 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/drivers/DC_Folder.php(2247): scan('/Users/chillisc...')
+#2 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/drivers/DC_Folder.php(312): Contao\DC_Folder->generateTree('/Users/chillisc...', 0, false, false, false)
+#3 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/classes/Backend.php(631): Contao\DC_Folder->showAll()
+#4 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(135): Contao\Backend->getBackendModule('files')
+#5 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/contao/main.php(22): Contao\BackendMain->run()
+#6 {main}
+
+[18-Dec-2014 14:51:09 Europe/Berlin] 
+PHP Warning: Cannot modify header information - headers already sent by (output started at /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/helper/functions.php:70) in /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Template.php on line 259
+#0 [internal function]: __error(2, 'Cannot modify h...', '/Users/chillisc...', 259, Array)
+#1 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Template.php(259): header('Vary: User-Agen...', false)
+#2 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/classes/BackendTemplate.php(122): Contao\Template->output()
+#3 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(277): Contao\BackendTemplate->output()
+#4 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(139): Contao\BackendMain->output()
+#5 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/contao/main.php(22): Contao\BackendMain->run()
+#6 {main}
+
+[18-Dec-2014 14:51:09 Europe/Berlin] 
+PHP Warning: Cannot modify header information - headers already sent by (output started at /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/helper/functions.php:70) in /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Template.php on line 260
+#0 [internal function]: __error(2, 'Cannot modify h...', '/Users/chillisc...', 260, Array)
+#1 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Template.php(260): header('Content-Type: t...')
+#2 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/classes/BackendTemplate.php(122): Contao\Template->output()
+#3 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(277): Contao\BackendTemplate->output()
+#4 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(139): Contao\BackendMain->output()
+#5 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/contao/main.php(22): Contao\BackendMain->run()
+#6 {main}
+
+[18-Dec-2014 14:51:09 Europe/Berlin] 
+PHP Warning: scandir(/Users/chilliscope/Documents/webseiten/contao/crewdesigner/files/fotos/): failed to open dir: No such file or directory in /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/helper/functions.php on line 194
+#0 [internal function]: __error(2, 'scandir(/Users/...', '/Users/chillisc...', 194, Array)
+#1 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/helper/functions.php(194): scandir('/Users/chillisc...')
+#2 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/drivers/DC_Folder.php(2247): scan('/Users/chillisc...')
+#3 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/drivers/DC_Folder.php(312): Contao\DC_Folder->generateTree('/Users/chillisc...', 0, false, false, false)
+#4 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/classes/Backend.php(631): Contao\DC_Folder->showAll()
+#5 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(135): Contao\Backend->getBackendModule('files')
+#6 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/contao/main.php(22): Contao\BackendMain->run()
+#7 {main}
+
+[18-Dec-2014 14:51:09 Europe/Berlin] 
+PHP Warning: scandir(): (errno 2): No such file or directory in /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/helper/functions.php on line 194
+#0 [internal function]: __error(2, 'scandir(): (err...', '/Users/chillisc...', 194, Array)
+#1 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/helper/functions.php(194): scandir('/Users/chillisc...')
+#2 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/drivers/DC_Folder.php(2247): scan('/Users/chillisc...')
+#3 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/drivers/DC_Folder.php(312): Contao\DC_Folder->generateTree('/Users/chillisc...', 0, false, false, false)
+#4 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/classes/Backend.php(631): Contao\DC_Folder->showAll()
+#5 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(135): Contao\Backend->getBackendModule('files')
+#6 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/contao/main.php(22): Contao\BackendMain->run()
+#7 {main}
+
+[18-Dec-2014 14:51:09 Europe/Berlin] 
+PHP Warning: Invalid argument supplied for foreach() in /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/helper/functions.php on line 194
+#0 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/helper/functions.php(194): __error(2, 'Invalid argumen...', '/Users/chillisc...', 194, Array)
+#1 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/drivers/DC_Folder.php(2247): scan('/Users/chillisc...')
+#2 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/drivers/DC_Folder.php(312): Contao\DC_Folder->generateTree('/Users/chillisc...', 0, false, false, false)
+#3 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/classes/Backend.php(631): Contao\DC_Folder->showAll()
+#4 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(135): Contao\Backend->getBackendModule('files')
+#5 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/contao/main.php(22): Contao\BackendMain->run()
+#6 {main}
+
+[18-Dec-2014 14:51:09 Europe/Berlin] 
+PHP Warning: Cannot modify header information - headers already sent by (output started at /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/helper/functions.php:70) in /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Template.php on line 259
+#0 [internal function]: __error(2, 'Cannot modify h...', '/Users/chillisc...', 259, Array)
+#1 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Template.php(259): header('Vary: User-Agen...', false)
+#2 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/classes/BackendTemplate.php(122): Contao\Template->output()
+#3 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(277): Contao\BackendTemplate->output()
+#4 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(139): Contao\BackendMain->output()
+#5 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/contao/main.php(22): Contao\BackendMain->run()
+#6 {main}
+
+[18-Dec-2014 14:51:09 Europe/Berlin] 
+PHP Warning: Cannot modify header information - headers already sent by (output started at /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/helper/functions.php:70) in /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Template.php on line 260
+#0 [internal function]: __error(2, 'Cannot modify h...', '/Users/chillisc...', 260, Array)
+#1 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Template.php(260): header('Content-Type: t...')
+#2 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/classes/BackendTemplate.php(122): Contao\Template->output()
+#3 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(277): Contao\BackendTemplate->output()
+#4 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(139): Contao\BackendMain->output()
+#5 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/contao/main.php(22): Contao\BackendMain->run()
+#6 {main}
+
+[18-Dec-2014 14:53:27 Europe/Berlin] 
+PHP Warning: imagecreatefrompng(): '/Users/chilliscope/Documents/webseiten/contao/crewdesigner/files/Fotos/dummy-pic_02.png' is not a valid PNG file in /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/GdImage.php on line 86
+#0 [internal function]: __error(2, 'imagecreatefrom...', '/Users/chillisc...', 86, Array)
+#1 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/GdImage.php(86): imagecreatefrompng('/Users/chillisc...')
+#2 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Image.php(531): Contao\GdImage::fromFile(Object(Contao\File))
+#3 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Image.php(500): Contao\Image->executeResizeGd()
+#4 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Image.php(932): Contao\Image->executeResize()
+#5 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/drivers/DC_Folder.php(2390): Contao\Image::get('files/Fotos/dum...', '', 50)
+#6 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/drivers/DC_Folder.php(2355): Contao\DC_Folder->generateTree('/Users/chillisc...', 20, false, false, false)
+#7 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/drivers/DC_Folder.php(320): Contao\DC_Folder->generateTree('/Users/chillisc...', 0, true, false, false)
+#8 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/classes/Backend.php(631): Contao\DC_Folder->showAll()
+#9 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(135): Contao\Backend->getBackendModule('files')
+#10 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/contao/main.php(22): Contao\BackendMain->run()
+#11 {main}
+
+[18-Dec-2014 14:53:28 Europe/Berlin] 
+PHP Warning: Cannot modify header information - headers already sent by (output started at /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/helper/functions.php:70) in /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Template.php on line 259
+#0 [internal function]: __error(2, 'Cannot modify h...', '/Users/chillisc...', 259, Array)
+#1 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Template.php(259): header('Vary: User-Agen...', false)
+#2 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/classes/BackendTemplate.php(122): Contao\Template->output()
+#3 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(277): Contao\BackendTemplate->output()
+#4 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(139): Contao\BackendMain->output()
+#5 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/contao/main.php(22): Contao\BackendMain->run()
+#6 {main}
+
+[18-Dec-2014 14:53:28 Europe/Berlin] 
+PHP Warning: Cannot modify header information - headers already sent by (output started at /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/helper/functions.php:70) in /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Template.php on line 260
+#0 [internal function]: __error(2, 'Cannot modify h...', '/Users/chillisc...', 260, Array)
+#1 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Template.php(260): header('Content-Type: t...')
+#2 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/classes/BackendTemplate.php(122): Contao\Template->output()
+#3 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(277): Contao\BackendTemplate->output()
+#4 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(139): Contao\BackendMain->output()
+#5 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/contao/main.php(22): Contao\BackendMain->run()
+#6 {main}
+
+[18-Dec-2014 14:53:28 Europe/Berlin] 
+PHP Warning: imagecreatefrompng(): '/Users/chilliscope/Documents/webseiten/contao/crewdesigner/files/Fotos/dummy-pic_02.png' is not a valid PNG file in /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/GdImage.php on line 86
+#0 [internal function]: __error(2, 'imagecreatefrom...', '/Users/chillisc...', 86, Array)
+#1 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/GdImage.php(86): imagecreatefrompng('/Users/chillisc...')
+#2 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Image.php(531): Contao\GdImage::fromFile(Object(Contao\File))
+#3 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Image.php(500): Contao\Image->executeResizeGd()
+#4 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Image.php(932): Contao\Image->executeResize()
+#5 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/drivers/DC_Folder.php(2390): Contao\Image::get('files/Fotos/dum...', '', 50)
+#6 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/drivers/DC_Folder.php(2355): Contao\DC_Folder->generateTree('/Users/chillisc...', 20, false, false, false)
+#7 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/drivers/DC_Folder.php(320): Contao\DC_Folder->generateTree('/Users/chillisc...', 0, true, false, false)
+#8 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/classes/Backend.php(631): Contao\DC_Folder->showAll()
+#9 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(135): Contao\Backend->getBackendModule('files')
+#10 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/contao/main.php(22): Contao\BackendMain->run()
+#11 {main}
+
+[18-Dec-2014 14:53:28 Europe/Berlin] 
+PHP Warning: Cannot modify header information - headers already sent by (output started at /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/helper/functions.php:70) in /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Template.php on line 259
+#0 [internal function]: __error(2, 'Cannot modify h...', '/Users/chillisc...', 259, Array)
+#1 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Template.php(259): header('Vary: User-Agen...', false)
+#2 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/classes/BackendTemplate.php(122): Contao\Template->output()
+#3 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(277): Contao\BackendTemplate->output()
+#4 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(139): Contao\BackendMain->output()
+#5 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/contao/main.php(22): Contao\BackendMain->run()
+#6 {main}
+
+[18-Dec-2014 14:53:28 Europe/Berlin] 
+PHP Warning: Cannot modify header information - headers already sent by (output started at /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/helper/functions.php:70) in /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Template.php on line 260
+#0 [internal function]: __error(2, 'Cannot modify h...', '/Users/chillisc...', 260, Array)
+#1 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Template.php(260): header('Content-Type: t...')
+#2 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/classes/BackendTemplate.php(122): Contao\Template->output()
+#3 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(277): Contao\BackendTemplate->output()
+#4 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(139): Contao\BackendMain->output()
+#5 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/contao/main.php(22): Contao\BackendMain->run()
+#6 {main}
+
+[18-Dec-2014 14:53:50 Europe/Berlin] 
+PHP Warning: imagecreatefrompng(): '/Users/chilliscope/Documents/webseiten/contao/crewdesigner/files/Fotos/dummy-pic_02.png' is not a valid PNG file in /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/GdImage.php on line 86
+#0 [internal function]: __error(2, 'imagecreatefrom...', '/Users/chillisc...', 86, Array)
+#1 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/GdImage.php(86): imagecreatefrompng('/Users/chillisc...')
+#2 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Image.php(531): Contao\GdImage::fromFile(Object(Contao\File))
+#3 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Image.php(500): Contao\Image->executeResizeGd()
+#4 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Image.php(932): Contao\Image->executeResize()
+#5 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/drivers/DC_Folder.php(2390): Contao\Image::get('files/Fotos/dum...', '', 50)
+#6 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/drivers/DC_Folder.php(2355): Contao\DC_Folder->generateTree('/Users/chillisc...', 20, false, false, false)
+#7 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/drivers/DC_Folder.php(320): Contao\DC_Folder->generateTree('/Users/chillisc...', 0, true, false, false)
+#8 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/classes/Backend.php(631): Contao\DC_Folder->showAll()
+#9 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(135): Contao\Backend->getBackendModule('files')
+#10 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/contao/main.php(22): Contao\BackendMain->run()
+#11 {main}
+
+[18-Dec-2014 14:53:50 Europe/Berlin] 
+PHP Warning: Cannot modify header information - headers already sent by (output started at /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/helper/functions.php:70) in /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Template.php on line 259
+#0 [internal function]: __error(2, 'Cannot modify h...', '/Users/chillisc...', 259, Array)
+#1 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Template.php(259): header('Vary: User-Agen...', false)
+#2 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/classes/BackendTemplate.php(122): Contao\Template->output()
+#3 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(277): Contao\BackendTemplate->output()
+#4 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(139): Contao\BackendMain->output()
+#5 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/contao/main.php(22): Contao\BackendMain->run()
+#6 {main}
+
+[18-Dec-2014 14:53:50 Europe/Berlin] 
+PHP Warning: Cannot modify header information - headers already sent by (output started at /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/helper/functions.php:70) in /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Template.php on line 260
+#0 [internal function]: __error(2, 'Cannot modify h...', '/Users/chillisc...', 260, Array)
+#1 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Template.php(260): header('Content-Type: t...')
+#2 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/classes/BackendTemplate.php(122): Contao\Template->output()
+#3 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(277): Contao\BackendTemplate->output()
+#4 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(139): Contao\BackendMain->output()
+#5 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/contao/main.php(22): Contao\BackendMain->run()
+#6 {main}
+
+[18-Dec-2014 14:53:50 Europe/Berlin] 
+PHP Warning: imagecreatefrompng(): '/Users/chilliscope/Documents/webseiten/contao/crewdesigner/files/Fotos/dummy-pic_02.png' is not a valid PNG file in /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/GdImage.php on line 86
+#0 [internal function]: __error(2, 'imagecreatefrom...', '/Users/chillisc...', 86, Array)
+#1 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/GdImage.php(86): imagecreatefrompng('/Users/chillisc...')
+#2 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Image.php(531): Contao\GdImage::fromFile(Object(Contao\File))
+#3 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Image.php(500): Contao\Image->executeResizeGd()
+#4 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Image.php(932): Contao\Image->executeResize()
+#5 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/drivers/DC_Folder.php(2390): Contao\Image::get('files/Fotos/dum...', '', 50)
+#6 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/drivers/DC_Folder.php(2355): Contao\DC_Folder->generateTree('/Users/chillisc...', 20, false, false, false)
+#7 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/drivers/DC_Folder.php(320): Contao\DC_Folder->generateTree('/Users/chillisc...', 0, true, false, false)
+#8 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/classes/Backend.php(631): Contao\DC_Folder->showAll()
+#9 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(135): Contao\Backend->getBackendModule('files')
+#10 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/contao/main.php(22): Contao\BackendMain->run()
+#11 {main}
+
+[18-Dec-2014 14:53:50 Europe/Berlin] 
+PHP Warning: Cannot modify header information - headers already sent by (output started at /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/helper/functions.php:70) in /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Template.php on line 259
+#0 [internal function]: __error(2, 'Cannot modify h...', '/Users/chillisc...', 259, Array)
+#1 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Template.php(259): header('Vary: User-Agen...', false)
+#2 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/classes/BackendTemplate.php(122): Contao\Template->output()
+#3 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(277): Contao\BackendTemplate->output()
+#4 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(139): Contao\BackendMain->output()
+#5 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/contao/main.php(22): Contao\BackendMain->run()
+#6 {main}
+
+[18-Dec-2014 14:53:50 Europe/Berlin] 
+PHP Warning: Cannot modify header information - headers already sent by (output started at /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/helper/functions.php:70) in /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Template.php on line 260
+#0 [internal function]: __error(2, 'Cannot modify h...', '/Users/chillisc...', 260, Array)
+#1 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/library/Contao/Template.php(260): header('Content-Type: t...')
+#2 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/classes/BackendTemplate.php(122): Contao\Template->output()
+#3 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(277): Contao\BackendTemplate->output()
+#4 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/system/modules/core/controllers/BackendMain.php(139): Contao\BackendMain->output()
+#5 /Users/chilliscope/Documents/webseiten/contao/crewdesigner/contao/main.php(22): Contao\BackendMain->run()
+#6 {main}
+
