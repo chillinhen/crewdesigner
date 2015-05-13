@@ -1,5 +1,7 @@
 <?php #$this->showTemplateVars(); ?>
 <div class="<?php echo $this->class; ?> block"<?php echo $this->cssID; ?><?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif; ?>>
+ 
+<?php include 'inc/edit.php';?>
 
   <?php if ($this->printable): ?>
     <!-- indexer::stop -->

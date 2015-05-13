@@ -23,7 +23,7 @@
     </head>
     <body class="{{ua::class}}<?php if ($this->class): ?> <?php echo $this->class; ?><?php endif; ?>"<?php if ($this->onload): ?> onload="<?php echo $this->onload; ?>"<?php endif; ?>>
 
-	
+	  <?php include 'inc/edit.php';?>
 	    <?php if ($this->header): ?>
 
     	    <header id="header">
@@ -43,7 +43,7 @@
 			if ($this->left || $this->right): 
 			    $contentClass = 'col-md-8 col-sm-12 col-xs-12';
 			    elseif(!($this->left) || !($this->right)) :
-			    $contentClass = 'col-md-12 col-sm-6 col-xs-12 no-border';
+			    $contentClass = 'col-md-12 col-sm-12 col-xs-12 no-border';
 			endif;
 			?>
 			<div id="content" class="<?php echo $contentClass; ?>">
@@ -91,10 +91,8 @@
 	</div>
 
 	<?php echo $this->mootools; ?>
-	<?php if (!$this->disableCron): ?>
+	
 
-    	<script src="<?php echo TL_ASSETS_URL; ?>assets/contao/js/scheduler.js?t=<?php echo $this->cronTimeout; ?>" id="cron"></script>
-	<?php endif; ?>
 
     </body>
 </html>

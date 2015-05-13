@@ -1,15 +1,1 @@
-	<?php 
-			    $asideClass = 'col-md-3 col-sm-12 col-xs-12';
-			    /** left **/
-			    if ($this->left && (!($this->right))): 
-			    $contentClass = 'col-md-9 col-sm-12 col-xs-12';
-			    
-			    elseif if ($this->left && (!($this->right))):
-			    $contentClass = 'col-md-12 col-sm-12 col-xs-12';
-			endif; ?>
-			    /** right **/
-			<?php if ($this->right): 
-			    $contentClass = 'col-md-offset-3 col-md-9 col-sm-12 col-xs-12';
-			    else :
-			    $contentClass = 'col-md-12 col-sm-12 col-xs-12';
-			endif; ?>
+<p><a href="https://www.facebook.com/" target="_blank">Facebook</a><br> <a href="https://www.xing.com/" target="_blank">Xing</a><br> <a href="https://www.google.com/" target="_blank">Google</a></p>
