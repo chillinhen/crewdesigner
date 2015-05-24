@@ -118,7 +118,7 @@ h2, .h2{
 #content .mod_article.first h2,
 #content .mod_article.first h3,
 #content .mod_article.first h4{
-    margin:0 0 2em 0;
+    margin:0 0 1em 0;
     font-size: 2.28em;
 }
 
@@ -367,6 +367,12 @@ body > #header > .row > .mod_article > .ce_image .image_container img {
     width: 100%;
     height:auto;
 }
+.ce_image.teaser-image .image_container img {
+	display: none;
+}
+body.startseite .ce_image.teaser-image .image_container img{
+	display: block;
+}
 body > #header .back{
 	display: none;
 }
@@ -488,7 +494,8 @@ body > #footer .social-links .ce_text a {
 /* =============================================================================
    CONTENT
    ========================================================================== */
-#content .social-media{
+.mod_article { position: relative; }
+.mod_article .social-media{
     position: absolute;
     right: 0;
     top: 0;
@@ -496,7 +503,7 @@ body > #footer .social-links .ce_text a {
     min-width: 200px;
     text-align: right;
 }
-#content .mod_article { position: relative; }
+
 
 .edit a{
     background:#79CBD5;
@@ -727,7 +734,20 @@ a[title="mail"]:before {
 	background-image: url('../img/button-cd.png');
 }
 .ce_caroufredsel_gallery {
-    height: 120px;
+    max-height:200px;
+    width: 100%;
+    overflow: hidden;
+}
+.caroufredsel > div{
+	max-width: 250px;
+	margin: 0 1em;
+	height: 120px;
+	text-align: center;
+}
+.caroufredsel .img-responsive{
+	height: 120px;
+	width: auto;
+	max-width: 250px;
 }
 .caroufredsel_controls {
     text-align: center;
@@ -738,7 +758,7 @@ a[title="mail"]:before {
     height:auto !important;
 }
 .caroufredsel_controls {
-    margin:0 -1.2em;
+    margin:1em -1.2em;
 }
 .caroufredsel_controls a {
     width: 1em;
